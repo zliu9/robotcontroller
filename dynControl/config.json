@@ -1,0 +1,106 @@
+{ 
+  "config": {
+    "serial": "COM1",
+	"baudrate": 115200
+  },
+  
+  "servo": [
+    {
+      "id": 1,
+      "name": "head",
+      "init": 0,
+	  "speed": 60,
+      "min": -15,
+      "max": 15
+    },
+    
+    {
+      "id": 2,
+      "name": "neck",
+      "init": 0,
+	  "speed": 60,
+      "min": -90,
+      "max": 90
+    },
+  
+    {
+      "id": 16,
+      "name": "right shoulder",
+      "init": 0,
+	  "speed": 60,
+      "min": -90,
+      "max": 90
+    },
+  
+    {
+      "id": 17,
+      "name": "right arm",
+      "init": -90,
+	  "speed": 60,
+      "min": -90,
+      "max": 90
+    },
+  
+    {
+      "id": 18,
+      "name": "right elbow",
+      "init": 0,
+	  "speed": 60,
+      "min": 0,
+      "max": 60
+    },
+  
+    {
+      "id": 32,
+      "name": "left shoulder ",
+      "init": 0,
+	  "speed": 60,
+      "min": -90,
+      "max": 90
+    },
+  
+    {
+      "id": 33,
+      "name": "left arm",
+      "init": -90,
+	  "speed": 60,
+      "min": -90,
+      "max": 90
+    },
+  
+    {
+      "id": 34,
+      "name": "left elbow",
+      "init": 0,
+	  "speed": 60,
+      "min":0,
+      "max":60
+    }
+  ],
+  
+  "action" : {
+  
+    "hello" : [
+      {"id": 1, "deg": -15},
+	  {"id": 1, "deg": 0},
+      {"id": 1, "deg": 15},
+	  {"id": 1, "deg": 0}
+    ],
+  
+    "right up" : [
+      {"id": 17, "deg": -90},
+	  {"id": 17, "deg": 0},
+      {"id": 17, "deg": 90},
+	  {"id": 17, "deg": 0}
+    ],
+	
+    "left up" : [
+      {"id": 18, "deg": -90},
+	  {"id": 18, "deg": 0},
+      {"id": 18, "deg": 90},
+	  {"id": 18, "deg": 0}
+    ]
+
+  }
+}
+  
