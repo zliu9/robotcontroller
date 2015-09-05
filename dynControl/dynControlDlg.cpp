@@ -374,6 +374,8 @@ void CdynControlDlg::SendServo(UINT idx)
     deg = _ttoi(str);
 
     log(_T("set servo 0x%02x, deg: %d\n"), idx, deg);
+
+    deg *= 10;
     jointAbsolutePosSet(cmd, &cmdLen, idx, &deg);
     SendData(cmd, cmdLen);
 }
